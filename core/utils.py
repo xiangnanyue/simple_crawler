@@ -104,7 +104,7 @@ def check_ip(proxy_type,
         print(response.status_code)
         if response.status_code == 200:
             try:
-                with open("./ips.csv", "a") as f:
+                with open("../ips.csv", "a") as f:
                     f.write(",".join([proxy_type, ip, port, str(datetime.now())]))
                     f.write("\n")
                 # content is of form bytes

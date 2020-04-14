@@ -8,7 +8,7 @@ if __name__ == '__main__':
     conn = connect_db()
     create_ippool_table(conn)
     print(os.path.dirname(__file__))
-    path = '/home/xiangnanyue/Downloads/phantomjs-2.1.1-linux-x86_64/bin/phantomjs'
+    path = './resources/phantomjs'
     driver = webdriver.PhantomJS(executable_path=path)
     proxy_engine = ProxyFactory(driver, SAMPLE_HEADERS)
     while 1:
